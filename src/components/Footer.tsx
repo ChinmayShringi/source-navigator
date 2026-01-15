@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Github, Twitter } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -22,27 +23,34 @@ const Footer = () => {
 
           {/* Links */}
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">
+            <a href="https://github.com/user/sourcesnap" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
               Documentation
             </a>
-            <a href="#" className="hover:text-primary transition-colors">
+            <a href="https://github.com/user/sourcesnap/releases" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
               Changelog
             </a>
-            <a href="#" className="hover:text-primary transition-colors">
+            <a href="https://github.com/user/sourcesnap/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
               MIT License
             </a>
+            <Link to="/privacy" className="hover:text-primary transition-colors">
+              Privacy Policy
+            </Link>
           </div>
 
           {/* Social */}
           <div className="flex items-center gap-4">
             <a
-              href="#"
+              href="https://github.com/user/sourcesnap"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-lg bg-secondary/50 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all duration-300"
             >
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://twitter.com/sourcesnap"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-lg bg-secondary/50 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all duration-300"
             >
               <Twitter className="w-5 h-5" />
