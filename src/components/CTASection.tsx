@@ -7,7 +7,7 @@ const CTASection = () => {
     <section className="relative py-32 px-6 overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-radial from-accent/10 via-primary/5 to-transparent" />
-      
+
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -40,14 +40,16 @@ const CTASection = () => {
                   <MousePointer2 className="w-5 h-5 transition-transform group-hover:rotate-12" />
                 </span>
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-border/50 hover:border-primary/50 hover:bg-primary/5 px-8 py-6 text-lg rounded-xl transition-all duration-300"
-              >
-                <Github className="w-5 h-5 mr-2" />
-                Star on GitHub
-              </Button>
+              <a href="https://github.com/ChinmayShringi/sourcesnap" target="_blank" rel="noopener noreferrer">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-border/50 hover:border-primary/50 hover:bg-primary/5 px-8 py-6 text-lg rounded-xl transition-all duration-300"
+                >
+                  <Github className="w-5 h-5 mr-2" />
+                  Star on GitHub
+                </Button>
+              </a>
             </div>
           </motion.div>
         </div>

@@ -91,13 +91,15 @@ const HeroSection = () => {
               <MousePointer2 className="w-5 h-5 transition-transform group-hover:rotate-12" />
             </span>
           </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-border/50 hover:border-primary/50 hover:bg-primary/5 px-8 py-6 text-lg rounded-xl transition-all duration-300"
-          >
-            View on GitHub
-          </Button>
+          <a href="https://github.com/ChinmayShringi/sourcesnap" target="_blank" rel="noopener noreferrer">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-border/50 hover:border-primary/50 hover:bg-primary/5 px-8 py-6 text-lg rounded-xl transition-all duration-300"
+            >
+              View on GitHub
+            </Button>
+          </a>
         </motion.div>
       </motion.div>
 
